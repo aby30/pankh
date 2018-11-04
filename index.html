@@ -1,0 +1,272 @@
+
+<html>
+  <head>
+    <title>Pankhuri</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <style>
+      .spr__headerInner {
+        background-color: #003E21;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $(".spr__propertyDetailsList > li > a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+      
+      function hideMenu() {
+        document.getElementById('triggerMenu').checked = false;
+      }
+      
+    </script>
+    <script type="text/javascript">
+      function showSprOnMap() {
+        //- var mapProp= {
+        //-     center:new google.maps.LatLng(13.102322, 80.252474),
+        //-     zoom:15,
+        //- };
+        //- var map=new google.maps.Map(document.getElementById("SprOnMap"),mapProp);
+        
+        //- var myCenter = new google.maps.LatLng(13.102322, 80.252474);
+        //- var mapCanvas = document.getElementById("propertyOnMap");
+        //- var mapOptions = {center: myCenter, zoom: 15};
+        //- var map = new google.maps.Map(mapCanvas, mapOptions);
+        //- var marker = new google.maps.Marker({position:myCenter, icon: 'images/markerSPR.png'});
+        //- marker.setMap(map);
+      }
+      
+      
+    </script>
+  </head>
+  <body>
+    <!--header Inculde-->
+    <div class="header__main">
+      <div class="header__inner"><span class="header__logo"><img src="images/icons/logoWhite.png"/></span><span class="header__menu">
+          <input type="checkbox" id="triggerMenu"/>
+          <label for="triggerMenu">
+            <div class="bar-wrap"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+          </label>
+          <div class="header__menuMain">
+            <div class="header__menuInner">
+              <div class="header__menuList">
+                <div class="header__menuListItem"><a href="#home" onClick="hideMenu();">Home</a></div>
+                <div class="header__menuListItem"><a href="#howItWorks" onClick="hideMenu();">How it works</a></div>
+                <div class="header__menuListItem"><a href="#behindTheScene" onClick="hideMenu();">Behind the scene</a></div>
+                <div class="header__menuListItem"><a href="#features" onClick="hideMenu();">Features</a></div>
+                <div class="header__menuListItem"><a href="#packages" onClick="hideMenu();">Packages</a></div>
+              </div>
+            </div>
+          </div></span></div>
+    </div>
+    <div class="home__main">
+      <div class="home__inner">
+        <div class="home__bannerWrap" id="home">
+          <div class="home__bannerInner">
+            <div class="home__bannerTitle">
+              <div>Be the </div>
+              <div>Talk of the town </div>
+              <div><span>on your</span>&nbsp;Wedding day</div>
+            </div>
+          </div>
+        </div>
+        <div class="home__featuredEventsWrap">   
+          <div class="home__featuredEventsInner">
+            <div class="home__featuredEventCardsWrap">
+              <div class="home__featuredEventCard">
+                <div class="home__featuredEventImg"><img src="images/img1.png"/></div>
+                <div class="home__featuredEventLikes"><span class="likeIcon"><img src="images/icons/like.svg"/></span><span class="likeStats">2356</span></div>
+              </div>
+              <div class="home__featuredEventCard">
+                <div class="home__featuredEventImg"><img src="images/img2.jpg"/></div>
+                <div class="home__featuredEventLikes"><span class="likeIcon"><img src="images/icons/like.svg"/></span><span class="likeStats">143</span></div>
+              </div>
+              <div class="home__featuredEventCard">
+                <div class="home__featuredEventImg"><img src="images/img3.jpg"/></div>
+                <div class="home__featuredEventLikes"><span class="likeIcon"><img src="images/icons/like.svg"/></span><span class="likeStats">1256</span></div>
+              </div>
+              <div class="home__featuredEventCard">
+                <div class="home__featuredEventImg"><img src="images/img4.jpg"/></div>
+                <div class="home__featuredEventLikes"><span class="likeIcon"><img src="images/icons/like.svg"/></span><span class="likeStats">2356</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home__howItWorksTag" id="howItWorks">
+          <hr/><span class="home__tagTitleWrap"><span class="home__tagTitle">make us famous</span></span>
+        </div>
+        <div class="home__howItWorksWrap">
+          <div class="home__howItWorksInner">
+            <div class="home__howItWorksTitle">how it works</div>
+            <div class="home__howItWorksSubTitle">Because the day you just spent 12 months planning needs to be a grand  affair on social media too.</div>
+            <div class="home__howItWorksSubTitle">Thousands of people -- your wedding guests, friends and family that couldn't be there, event vendors (and their followers) will be following your wedding in real-time</div>
+            <div class="home__howItWorksBtn">
+              <button class="defaultBtn">get a quote</button>
+            </div>
+          </div>
+        </div>
+        <div class="home__supportWrap" id="behindTheScene">
+          <div class="home__supportInner">
+            <div class="home__supporTitle">Behind the scenes support</div>
+            <div class="home__supporItemWrap">
+              <div class="home__supporItem">
+                <div class="home__supporIcon"><img src="images/icons/brain.svg"/></div>
+                <div class="home__supporText">brainstorm your wedding hashtag and make the guests use it</div>
+              </div>
+              <div class="home__supporItem">
+                <div class="home__supporIcon"><img src="images/icons/photo.svg"/></div>
+                <div class="home__supporText">post beautiful moments of the day photos on your social media accounts</div>
+              </div>
+              <div class="home__supporItem">
+                <div class="home__supporIcon"><img src="images/icons/socialMix.svg"/></div>
+                <div class="home__supporText">make people follow your wedding on Instagram, Facebook, Twitter</div>
+              </div>
+            </div>
+            <div class="home__supporSubTitle">All while it's happening live!</div>
+          </div>
+        </div>
+        <div class="home__servicesWrap" id="features">
+          <div class="home__servicesInner">
+            <div class="home__servicesItemMain">
+              <div class="home__servicesItemWrap">
+                <div class="home__servicesItem">
+                  <div class="home__servicesItemImg"><img src="images/destination.jpg"/></div>
+                  <div class="home__servicesItemTitle">Destination wedding</div>
+                </div>
+              </div>
+              <div class="home__servicesItemWrap">   
+                <div class="home__servicesItem">
+                  <div class="home__servicesItemImg"><img src="images/makeup.jpg"/></div>
+                  <div class="home__servicesItemTitle">Bridal Beauty</div>
+                </div>
+              </div>
+              <div class="home__servicesItemWrap">   
+                <div class="home__servicesItem">
+                  <div class="home__servicesItemImg"><img src="images/fashion.jpg"/></div>
+                  <div class="home__servicesItemTitle">Wedding Fashion</div>
+                </div>
+              </div>
+              <div class="home__servicesItemWrap">   
+                <div class="home__servicesItem">
+                  <div class="home__servicesItemImg"><img src="images/decor.jpg"/></div>
+                  <div class="home__servicesItemTitle">Decor</div>
+                </div>
+              </div>
+              <div class="home__servicesItemWrap">   
+                <div class="home__servicesItem">
+                  <div class="home__servicesItemImg"><img src="images/gifts.jpg"/></div>
+                  <div class="home__servicesItemTitle">Gifts</div>
+                </div>
+              </div>
+              <div class="home__servicesItemWrap">   
+                <div class="home__servicesItem">
+                  <div class="home__servicesItemImg"><img src="images/plannings.jpg"/></div>
+                  <div class="home__servicesItemTitle">Wedding Planning</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home__packagesWrap" id="packages">
+          <div class="home__packagesInner">
+            <div class="home__packagesTitle">Customizable packages available</div>
+            <div class="home__packagesItemWrap">
+              <div class="home__packageItem">
+                <div class="home__packageItemImg"><img src="images/customerSupport.jpg"/></div>
+                <div class="home__packageItemTitleTag">
+                  <div class="home__packageItemTag">18-Caret Packages</div>
+                  <div class="home__packageItemTitle">Remote</div>
+                </div>
+                <div class="home__packageItemPts">Hashtag creation​ & Promotion.</div>
+                <div class="home__packageItemPts">Wedding hashtag creative display consultation call</div>
+                <div class="home__packageItemPts">
+                   Coordinate with your photographer to post high quality photos on social media</div>
+              </div>
+              <div class="home__packageItem">
+                <div class="home__packageItemImg"><img src="images/services3.jpg"/></div>
+                <div class="home__packageItemTitleTag">
+                  <div class="home__packageItemTag">18-Caret Packages</div>
+                  <div class="home__packageItemTitle">Remote</div>
+                </div>
+                <div class="home__packageItemPts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="home__packageItemPts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur adipiscing</div>
+                <div class="home__packageItemPts">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur adipiscing</div>
+                <div class="home__packageItemPts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur adipiscing</div>
+              </div>
+              <div class="home__packageItem">
+                <div class="home__packageItemImg"><img src="images/customerSupport.jpg"/></div>
+                <div class="home__packageItemTitleTag">
+                  <div class="home__packageItemTag">18-Caret Packages</div>
+                  <div class="home__packageItemTitle">Remote</div>
+                </div>
+                <div class="home__packageItemPts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="home__packageItemPts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur adipiscing</div>
+                <div class="home__packageItemPts">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur adipiscing</div>
+                <div class="home__packageItemPts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur adipiscing</div>
+                <div class="home__packageItemPts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet, consectetur adipiscingsit amet, consectetur adipiscingsit amet, consectetur adipiscing</div>
+              </div>
+            </div>
+            <div class="home__packagesBtn">
+              <button class="defaultBtn">Get a quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__main">
+      <div class="footer__inner">
+        <div class="footer__logo"><img src="images/icons/logoWhite.png"/>
+          <div class="footer__rights">(C) 2018 Pankhuri, All rights reserved</div>
+        </div>
+        <div class="footer__linksWrap">
+          <div class="footer__linksColumn">
+            <div class="footer__linksColumnTitle">Ideas</div>
+            <ul class="footer__linksColumnList">
+              <li><a href="">Decor</a></li>
+              <li><a href="">Gifts</a></li>
+              <li><a href="">Destinations</a></li>
+              <li><a href="">Fashions</a></li>
+              <li><a href="">Beauty</a></li>
+            </ul>
+          </div>
+          <div class="footer__linksColumn">
+            <div class="footer__linksColumnTitle">Quick Links</div>
+            <ul class="footer__linksColumnList">
+              <li><a href="">Why Social Media?</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Contact Us </a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer__linksColumn">
+            <div class="footer__linksColumnTitle">Social Media</div>
+            <ul class="footer__linksColumnList">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
